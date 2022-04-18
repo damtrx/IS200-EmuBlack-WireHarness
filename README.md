@@ -13,18 +13,19 @@ It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without an
 4. [EMU Black Basemap](#Basemap)
 5. [PCB Gerber files](#PCBs)
 6. [TODO List](#TODO)
+6. [Contacts](#Contacts)
 
 
 
 
-## Requirements
+# Requirements
 1. EMU Black ECU
 2. Bosch Wideband Sensor LSU 4.9 
 3. ECU Header [8-5353015-1](https://www.te.com/usa-en/product-8-5353015-1.html)
 4. 39pin and 24pin Connectors
 
 
-## Pinouts
+# Pinouts
 
 EMU Black Pinout
 
@@ -59,7 +60,7 @@ The first version is compatible for Lexus IS200/IS300 ecu header and most of the
 
 That's why i put alot of effort to do this design
 
-### Version 0.1 
+## Version 0.1 
 
 ![PCB-0.1](./img/pcb-v0.1.SVG)
 
@@ -71,7 +72,7 @@ Current prototype :
 
 Gerber Files : [1G/1J/2J/Miata Header Gerber Files](./PCB/JZ-header%20-%20CADCAM.ZIP)
 
-### Version 0.2
+## Version 0.2
 The later version was optimized so that is smaller and can fit in the original OEM ECU box with EMU Black inside.
 
 ![PCB-0.2](./img/pcb-v0.2.SVG)
@@ -107,14 +108,14 @@ Coil Dwell time found on the internet
 <img src="./img/coil-dwell.png" width="300" />
 
 ## ECU Header
-If you want to build your own PCB in proteus here is the Library .
+If you want to build your own PCB in proteus here is the Library.
 
 ECU Header for Proteus 8: [ECUHeader](./lib/8-5353015-1.zip)
 
 <img src="./img/ecu-header.jpg" width="300" />
 
 
-# TODO list
+# TODO
 
 - [x] Create PCBs
 - [x] Do a basic MAP
@@ -152,5 +153,5 @@ ECU Header for Proteus 8: [ECUHeader](./lib/8-5353015-1.zip)
 You can start the car with this configuration.At this moment a fine tune is needed. Stay...tuned :) 
 
 
-## Contacts
+# Contacts
 mtrx at outlook dot com
