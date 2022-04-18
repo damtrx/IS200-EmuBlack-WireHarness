@@ -6,10 +6,9 @@ It was created entirely from scratch and it is for Lexus Is200 Manual (1999) mod
 
 It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without any wire modification. My original plan is to use the original OEM ecu box for all the components.
 
-In this REPO you will find:
 
 # Table of Contents
-1. [What is workin](#Requirements)
+1. [Requirements](#Requirements)
 3. [ECU Pinouts](#Pinouts)
 4. [EMU Black Basemap](#Basemap)
 5. [PCB Gerber files](#PCBs)
@@ -54,8 +53,11 @@ This is the first revision of the BaseMap.
 
 # PCBs
 I had created two PCBs for this project. 
-The first one was a PoC and actually expands all of the 122 1GFE connectors pins to a PCB. It is very usefull if you have to do your own wiring and do not want to solder directly into the ECU Header.
-The first version is compatible for Lexus IS200/IS300 ecu header and most of the Toyotas, Mazda Miata MX5, Some Subarus and so on.
+The first one was a PoC that expands all 122 pins fro the original 1GFE ecu heade to a PCB Borad.
+It is very usefull if you have to do your own wiring and do not want to solder directly into the ECU Header.
+The first version is compatible for Lexus IS200/IS300 ecu header and most of the Toyotas, Mazda Miata MX5, Some Subarus and so on. I've tried to solder directly on the pins but at somepoint they started to brake. 
+
+That's why i put alot of effort to do this design
 
 ### Version 0.1 
 
@@ -77,17 +79,19 @@ The later version was optimized so that is smaller and can fit in the original O
 You will need: 
 
 1. Bosch LSU 4.9 Wideband sensor
-2. (Optional) All4Swap box for the A/C control and is200 cluster communication.
+2. (Optional) All4Swap box for the A/C control unit and IS200 dashboard. 
 
-    I'm adding this as optional because the RPMs/Check Engine Light may not be directly connected to the All4Swap box (search for it). A/C relay can be controlled directly from the EMU Black if needed (forget about the climate controll unit in your car)
-    Most Toyotas from these days are using BEANS network for communucation and does not relly on direct CAN communication. Thats why you need a MPX (multiplexor) device connected to the BEANS network to have control over the IS200 cluster. Fuel or coolant temperature gauge for example are controlled through the BEANS network from the Combination Meter (Body ECU) . Combination meter receives a signal from the OEM Ecu for different sensors - OIL pressure, OIL level, Fuel, coolant and all sorts of sensors. 
+    I'm adding this as optional because the RPMs/Check Engine Light may not be directly connected to the All4Swap box. A/C relay can be controlled directly from the EMU Black if needed (forget about the climate controll unit in your car or some precautions). I assume that All4Swap box is just sending On/Off signal based on climate controll temperature.
 
-    The problem with All4Swap box is that in this application it can be used to show only: 
-    A/C Unit 
-    Coolant (with additional Output from the EMU Black)
-    OIL Pressure
+    Most Toyotas from these days are using BEANS network for communucation and does not relly on direct CAN communication. Thats why you need a MPX (multiplexor) device connected to the BEANS network to have control over the IS200 cluster or A/C. Fuel or coolant temperature gauge for example are controlled through the BEANS network from the Combination Meter (Body ECU) . Combination meter receives a signal from the OEM Ecu for different sensors - OIL pressure, OIL level, Fuel, coolant and all sorts of other sensors. 
 
-    If for example EMU Bluetooth device is used with EMU Black then most of the usefull sensors can be displayed on EMUDash and the All4Swap box can be used only to control the A/C Unit . That's why i'm adding this as optional. 
+    The problem with All4Swap box is that in this application it can be used to show or control only: 
+    * A/C Unit 
+    * Coolant (with additional Output from the EMU Black or other external NCT temperature sensor)
+    * OIL Pressure
+
+    If for example EMU Bluetooth device is used with EMU Black then most of the usefull sensors can be displayed on EMUDash and the All4Swap box can be used only to control the A/C Unit . That's why i'm adding this as optional, because i'm not planning to use it in the future.
+
 3. 150k ohm resistor
 4. 3A Fuse
 5. Wires
@@ -111,31 +115,34 @@ Coil Dwell time found on the internet
 - [x] Wire and test Wideband
 - [x] Connect All4Swap device and test A/C
 - [x] Setup Drive By Wire
-- [x] Setup All Sensors (VVTI/EVAP/Crank/Cam..etx)
+- [x] Setup All Sensors (VVTI/EVAP/Crank/Cam..etc)
 - [x] Perform Hot start tests 
 - [x] Setup Injectors
 - [x] Setup Knock Sensors
 - [x] Setup Dwell time on coils
 - [ ] Dyno Test
-- [ ] Set AFR Table
+- [ ] Set AFR Table (need time)
 - [ ] Set VVTI Table (need dyno)
 - [ ] VE Tables (need dyno)
-- [ ] IDLE Control (need car)
-- [ ] Add TRC Input from the ABS sensors of configure the Traction Control in the EMU Black (need aditional logic)
+- [ ] IDLE Control (need time)
+- [ ] Add TRC Input from the ABS sensors and configure the Traction Control in the EMU Black (need aditional logic). I might end using builtin TCR Control.
 - [ ] Move boost solenoid into the EMU Black (this will be my last step)
 - [ ] CLT not shown on Dash (don't think i needed)
-- [ ] Oil Pressure light missing on dash (maybe i will use EMU Dash with bluetooth.Otherwise ...A4Swap)
+- [ ] Oil Pressure light missing on dash (maybe i will use EMU Dash with bluetooth.Otherwise ...All4Swap)
 - [ ] Check Engine Light not connected. (maybe i will use the EMU Dash for this)
-- [ ] Add Blutooth device
-- [ ] 3D Printed parts to attach the PCB into the original OEM ECU Box
+- [ ] Add Blutooth device (waiting for car headunit)
+- [ ] 3D Printed parts to attach the PCB into the original OEM ECU Box. Nedd final PCB
 
 
 # Nice to have things
 
 - [ ] Create my own MPX Implementation
 - [ ] Table Switches 
+- [ ] Clutch switch for Launch control 
 
 
-You can start the car with this configuration but at this moment a fine tune is needed. Stay...tuned :) 
+You can start the car with this configuration.At this moment a fine tune is needed. Stay...tuned :) 
 
 
+## Contacts
+mtrx at outlook dot com
