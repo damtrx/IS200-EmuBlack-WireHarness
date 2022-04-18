@@ -61,12 +61,18 @@ The first version is compatible for Lexus IS200/IS300 ecu header and most of the
 
 ![PCB-0.1](./img/pcb-v0.1.SVG)
 
-Gerber Files : 
 
-[1G/1J/2J/Miata Header Gerber Files](./PCB/JZ-header%20-%20CADCAM.ZIP)
+Current prototype :
+
+<img src="./img/v01.jpg" width="300" />
+
+
+Gerber Files : [1G/1J/2J/Miata Header Gerber Files](./PCB/JZ-header%20-%20CADCAM.ZIP)
 
 ### Version 0.2
-The later version was optimized so that is smaller and can fit in the original OEM ECU box with EMU Black inside
+The later version was optimized so that is smaller and can fit in the original OEM ECU box with EMU Black inside.
+
+![PCB-0.2](./img/pcb-v0.2.SVG)
 
 You will need: 
 
@@ -86,23 +92,40 @@ You will need:
 4. 3A Fuse
 5. Wires
 
-![PCB-0.2](./img/pcb-v0.2.SVG)
 
-Gerber Files: 
+Gerber Files: [IS200 Manual Gerber files](./PCB/IS200%20-%20CADCAM.ZIP)
 
-[IS200 Manual Gerber files](./PCB/IS200%20-%20CADCAM.ZIP)
+# Additional Information
+
+## Coil Dwell Time
+Coil Dwell time found on the internet
+
+<img src="./img/coil-dwell.png" width="300" />
 
 
+# TODO list
 
-## TODO list
-
-- [ ] Add TRC Input from the ABS sensors of configure the Traction Control in the EMU Black
-- [ ] VE Tables
+- [x] Create PCBs
+- [x] Do a basic MAP
+- [x] Wire and test Wideband
+- [x] Connect All4Swap 
+- [x] Setup Drive By Wire
+- [x] Setup All Sensors (VVTI/EVAP/Crank/Cam..etx)
+- [x] Perform Hot/Cold start tests
+- [x] Setup Injectors
+- [x] Setup Dwell time on coils
+- [ ] Set AFR Table
+- [ ] Set VVTI Table (need dyno)
+- [-] VE Tables
 - [ ] IDLE Control 
+- [ ] Add TRC Input from the ABS sensors of configure the Traction Control in the EMU Black
+
 - [ ] Move boost solenoid into the EMU Black 
+- [ ] CLT not shown on Dash
+- [ ] Oil Pressure light missing on dash
+- [ ] Check Engine Light not connected. (maybe i will use the EMU Dash for this)
 - [ ] 3D Printed parts to attach the PCB into the original OEM ECU Box
-- [ ] Full Road test
-- [x] 2nd version of the PCB
+
 
 You can start the car with this configuration but at this moment a fine tune is needed. Stay...tuned :) 
 
