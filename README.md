@@ -57,7 +57,7 @@ The first version is compatible for Lexus IS200/IS300 ecu header and most of the
 
 ### Version 0.1 
 
-![PCB-0.1](./img/pcb-v0.1.svg)
+![PCB-0.1](./img/pcb-v0.1.SVG)
 
 [1G/1J/2J/Miata Header](./PCB/JZ-header%20-%20CADCAM.ZIP)
 
@@ -82,7 +82,7 @@ You will need:
 4. 3A Fuse
 5. Wires
 
-![PCB-0.2](./img/pcb-v0.2.svg)
+![PCB-0.2](./img/pcb-v0.2.SVG)
 
 [IS200 Manual](./PCB/IS200%20-%20CADCAM.ZIP)
 
