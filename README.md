@@ -55,9 +55,9 @@ This is the first revision of the BaseMap.
 
 # PCBs
 I had created two PCBs for this project. 
-The first one was a PoC that expands all 122 pins fro the original 1GFE ecu heade to a PCB Borad.
+The first one was a PoC that expands all 122 pins from the original 1GFE ecu header to a PCB board.
 It is very usefull if you have to do your own wiring and do not want to solder directly into the ECU Header.
-The first version is compatible for Lexus IS200/IS300 ecu header and most of the Toyotas, Mazda Miata MX5, Some Subarus and so on. I've tried to solder directly on the pins but at somepoint they started to brake. 
+The first version is compatible for Lexus IS200/IS300 ecu header and most of the Toyotas, Mazda Miata MX5, some Subarus and so on. I've tried to solder directly on the pins but at somepoint they started to brake. 
 
 That's why i put alot of effort to do this design
 
