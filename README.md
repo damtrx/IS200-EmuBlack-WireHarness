@@ -107,24 +107,33 @@ Coil Dwell time found on the internet
 
 - [x] Create PCBs
 - [x] Do a basic MAP
+- [x] Test all outputs and Inputs
 - [x] Wire and test Wideband
-- [x] Connect All4Swap 
+- [x] Connect All4Swap device and test A/C
 - [x] Setup Drive By Wire
 - [x] Setup All Sensors (VVTI/EVAP/Crank/Cam..etx)
-- [x] Perform Hot/Cold start tests
+- [x] Perform Hot start tests 
 - [x] Setup Injectors
+- [x] Setup Knock Sensors
 - [x] Setup Dwell time on coils
+- [ ] Dyno Test
 - [ ] Set AFR Table
 - [ ] Set VVTI Table (need dyno)
-- [-] VE Tables
-- [ ] IDLE Control 
-- [ ] Add TRC Input from the ABS sensors of configure the Traction Control in the EMU Black
-
-- [ ] Move boost solenoid into the EMU Black 
-- [ ] CLT not shown on Dash
-- [ ] Oil Pressure light missing on dash
+- [ ] VE Tables (need dyno)
+- [ ] IDLE Control (need car)
+- [ ] Add TRC Input from the ABS sensors of configure the Traction Control in the EMU Black (need aditional logic)
+- [ ] Move boost solenoid into the EMU Black (this will be my last step)
+- [ ] CLT not shown on Dash (don't think i needed)
+- [ ] Oil Pressure light missing on dash (maybe i will use EMU Dash with bluetooth.Otherwise ...A4Swap)
 - [ ] Check Engine Light not connected. (maybe i will use the EMU Dash for this)
+- [ ] Add Blutooth device
 - [ ] 3D Printed parts to attach the PCB into the original OEM ECU Box
+
+
+# Nice to have things
+
+- [ ] Create my own MPX Implementation
+- [ ] Table Switches 
 
 
 You can start the car with this configuration but at this moment a fine tune is needed. Stay...tuned :) 
