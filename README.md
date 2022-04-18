@@ -35,6 +35,7 @@ EMU Black Pinout
 Mapped PINS
 
 ![Mapped Pins](./img/pinouts.jpg)
+  **A6 pin is used for CEL**
 
 Bosch LSU 4.9 wiring
 
@@ -97,6 +98,17 @@ You will need:
 4. 3A Fuse
 5. Wires
 
+  **A6 pin is used for CEL and it is not connected to any EMU Pins.A6 is expanded**
+
+  <img src="./img/cel.png" width="200" />
+
+    **D1 pin is used for Oil Pressure and it is not connected to any EMU Pins.D1 is expanded**
+
+  <img src="./img/mops.png" width="200" />
+
+      **E6 pin is used for Oil Level Switch and it is not connected to any EMU Pins.E6 is expanded**
+
+  <img src="./img/mol.png" width="200" />
 
 Gerber Files: [IS200 Manual Gerber files](./PCB/IS200%20-%20CADCAM.ZIP)
 
