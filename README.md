@@ -120,12 +120,13 @@ Coil Dwell time found on the internet
 - [x] Setup Injectors
 - [x] Setup Knock Sensors
 - [x] Setup Dwell time on coils
+- [ ] Need to set Trigger Angle (car missing at the moment)
 - [ ] Dyno Test
 - [ ] Set AFR Table (need time)
 - [ ] Set VVTI Table (need dyno)
 - [ ] VE Tables (need dyno)
 - [ ] IDLE Control (need time)
-- [ ] Add TRC Input from the ABS sensors and configure the Traction Control in the EMU Black (need aditional logic). I might end using builtin TCR Control.
+- [ ] Add TRC Input from the ABS sensors and configure the Traction Control in the EMU Black (need aditional logic).I might end using builtin TRC Control.
 - [ ] Move boost solenoid into the EMU Black (this will be my last step)
 - [ ] CLT not shown on Dash (don't think i needed)
 - [ ] Oil Pressure light missing on dash (maybe i will use EMU Dash with bluetooth.Otherwise ...All4Swap)
