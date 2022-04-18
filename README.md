@@ -29,7 +29,8 @@ In this REPO you will find:
 
 EMU Black Pinout
 
-![EMU Black](./img/black-emu.jpg ){ width=50% }
+<img src="./img/black-emu.jpg" width="300" />
+
 
 Mapped PINS
 
@@ -37,20 +38,21 @@ Mapped PINS
 
 Bosch LSU 4.9 wiring
 
-![Bosch LSU 4.9](./img/emu-bosch-lsu-4.9.jpg)
+<img src="./img/emu-bosch-lsu-4.9.jpg" width="300" />
 
-![Bosch LSU 4.9. Wiring](./img/emu-bosch-lsu-4.9-wiring.jpg)
+<img src="./img/emu-bosch-lsu-4.9-wiring.jpg" width="300" />
 
 All4 Swap 
 
-![All4Swap Box](./img/all4swap.jpg)
-## Basemap
+<img src="./img/all4swap.jpg" width="300" />
+
+# Basemap
 
 This is the first revision of the BaseMap.
 
 [BaseMAP](./lib/is200-manual-0.1.emub)
 
-## PCBs
+# PCBs
 I had created two PCBs for this project. 
 The first one was a PoC and actually expands all of the 122 1GFE connectors pins to a PCB. It is very usefull if you have to do your own wiring and do not want to solder directly into the ECU Header.
 The first version is compatible for Lexus IS200/IS300 ecu header and most of the Toyotas, Mazda Miata MX5, Some Subarus and so on.
@@ -59,7 +61,9 @@ The first version is compatible for Lexus IS200/IS300 ecu header and most of the
 
 ![PCB-0.1](./img/pcb-v0.1.SVG)
 
-[1G/1J/2J/Miata Header](./PCB/JZ-header%20-%20CADCAM.ZIP)
+Gerber Files : 
+
+[1G/1J/2J/Miata Header Gerber Files](./PCB/JZ-header%20-%20CADCAM.ZIP)
 
 ### Version 0.2
 The later version was optimized so that is smaller and can fit in the original OEM ECU box with EMU Black inside
@@ -84,7 +88,9 @@ You will need:
 
 ![PCB-0.2](./img/pcb-v0.2.SVG)
 
-[IS200 Manual](./PCB/IS200%20-%20CADCAM.ZIP)
+Gerber Files: 
+
+[IS200 Manual Gerber files](./PCB/IS200%20-%20CADCAM.ZIP)
 
 
 
