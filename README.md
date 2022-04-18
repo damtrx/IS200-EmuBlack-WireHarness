@@ -21,7 +21,7 @@ In this REPO you will find:
 ## Requirements
 1. EMU Black ECU
 2. Bosch Wideband Sensor LSU 4.9 
-3. ECU Header
+3. ECU Header [8-5353015-1](https://www.te.com/usa-en/product-8-5353015-1.html)
 4. 39pin and 24pin Connectors
 
 
@@ -94,13 +94,16 @@ Gerber Files:
 
 
 
-## TODO
-You can start the car with this configuration but at this moment a fine tune is needed. Stay...tuned :) 
+## TODO list
 
-1. Add TRC Input from the ABS sensors of configure the Traction Control in the EMU Black
-2. VE Tables
-3. IDLE Control 
-4. Move boost solenoid into the EMU Black 
-5. 3D Printed parts to attach the PCB into the original OEM ECU Box
+- [ ] Add TRC Input from the ABS sensors of configure the Traction Control in the EMU Black
+- [ ] VE Tables
+- [ ] IDLE Control 
+- [ ] Move boost solenoid into the EMU Black 
+- [ ] 3D Printed parts to attach the PCB into the original OEM ECU Box
+- [ ] Full Road test
+- [x] 2nd version of the PCB
+
+You can start the car with this configuration but at this moment a fine tune is needed. Stay...tuned :) 
 
 
