@@ -106,6 +106,13 @@ Coil Dwell time found on the internet
 
 <img src="./img/coil-dwell.png" width="300" />
 
+## ECU Header
+If you want to build your own PCB in proteus here is the Library .
+
+ECU Header for Proteus 8: [ECUHeader](./lib/8-5353015-1.zip)
+
+<img src="./img/ecu-header.jpg" width="300" />
+
 
 # TODO list
 
