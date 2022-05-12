@@ -21,9 +21,11 @@ It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without an
 
    <img src="./img/pcb-v0.2-error.png" width="300" />
 
-   Due to error **A8-PWR** was connected to **Black Connector pin 20**
-   **Cut the trace or use later versions**
-   Connect A8-PWR to A8 or Grey 3 connector (fixed in later versions)
+   Due to error **A8-PWR** was connected to **Black Connector pin 20**.
+
+   **Cut the trace or use later versions**.
+   
+   Connect A8-PWR to A8 or Grey 3 connector (fixed in later versions).
 2. Added more space between **A4S** pins
 
 # Requirements
