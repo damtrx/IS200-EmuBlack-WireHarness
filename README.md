@@ -19,13 +19,19 @@ It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without an
 # Change log 12.05.2022: 
 1. Do not use PCB version 0.2 (removed from repo).
 
-   <img src="./img/pcb-v0.2-error.png" width="300" />
+- Due to error **A8-PWR** was connected to **Black Connector pin 20**.
+- Wrong connection between A8 and A10 
+- Wrong Connection between Grey pin 3 and FUSE
+- **Cut the traces or use later versions**
 
-   Due to error **A8-PWR** was connected to **Black Connector pin 20**.
+    <img src="./img/pcb-v0.2-2-error.png" width="300" />
 
-   **Cut the trace or use later versions**.
-   
-   Connect A8-PWR to A8 or Grey 3 connector (fixed in later versions).
+    <img src="./img/pcb-v0.2-error.png" width="300" />
+
+- Connect A8-PWR to A8 (fixed in later versions).
+- Connect A8 to E18 and E20
+- Connect A8 to Fuse
+
 2. Added more space between **A4S** pins
 
 # Requirements
