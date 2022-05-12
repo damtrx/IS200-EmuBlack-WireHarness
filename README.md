@@ -16,7 +16,7 @@ It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without an
 6. [Contacts](#Contacts)
 
 
-# Change log:
+# Change log 12.05.2022: 
 1. Do not use PCB version 0.2 (removed from repo).
 
    <img src="./img/pcb-v0.2-error.png" width="300" />
