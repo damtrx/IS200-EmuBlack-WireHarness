@@ -16,7 +16,15 @@ It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without an
 6. [Contacts](#Contacts)
 
 
+# Change log:
+1. Do not use PCB version 0.2 (removed from repo).
 
+   <img src="./img/pcb-v0.2-error.png" width="300" />
+
+   Due to error **A8-PWR** was connected to **Black Connector pin 20**
+   **Cut the trace or use later versions**
+   Connect A8-PWR to A8 or Grey 3 connector (fixed in later versions)
+2. Added more space between **A4S** pins
 
 # Requirements
 1. EMU Black ECU
@@ -73,10 +81,12 @@ Current prototype :
 
 Gerber Files : [1G/1J/2J/Miata Header Gerber Files](./PCB/JZ-header%20-%20CADCAM.ZIP)
 
-## Version 0.2
+## Version 0.3
+
 The later version was optimized so that is smaller and can fit in the original OEM ECU box with EMU Black inside.
 
-![PCB-0.2](./img/pcb-v0.2.SVG)
+![PCB-0.3](./img/pcb-v0.3.SVG)
+
 
 You will need: 
 
