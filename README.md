@@ -16,6 +16,13 @@ It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without an
 6. [Contacts](#Contacts)
 
 
+# Change log 17.05.2022:
+
+1. Connected Pin B22 to Black 31 (Analog 1) for Cruise Control
+- Expanded a few pins so they can be easily soldered if needed
+
+    <img src="./img/pcb-v0.4-CC-Trace.png" width="200" />
+
 # Change log 12.05.2022: 
 1. Do not use PCB version 0.2 (removed from repo).
 
@@ -88,6 +95,25 @@ Current prototype :
 
 
 Gerber Files : [1G/1J/2J/Miata Header Gerber Files](./PCB/JZ-header%20-%20CADCAM.ZIP)
+
+## Version 0.4
+
+I had a few days to decide how to implement Cruise Control and after a few days i came up with an idea.
+Updated the traces and added a new PCB version v0.4
+
+![PCB-0.4](./img/pcb-v0.4.SVG)
+
+ **B2 pin is used for Cruise Control on the OEM ECU**
+
+ **Moved Switch 1 to bottom**
+
+ **Expanded Black 26 for 5v**
+
+ **Expanded Black 39 for GND**
+
+Gerber Files: [IS200 Manual Gerber files](./PCB/JZ-header-v0.4%20-%20CADCAM.ZIP)
+
+
 
 ## Version 0.3
 
