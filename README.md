@@ -98,7 +98,13 @@ Gerber Files : [1G/1J/2J/Miata Header Gerber Files](./PCB/JZ-header%20-%20CADCAM
 
 ## Version 0.4
 
-I had a few days to decide how to implement Cruise Control and after a few days i came up with an idea.
+I had a few days to decide how to implement Cruise Control and i came up with an idea to use the stock Cruise Control switch on the IS200 steering wheel. Need to figure out how to connect Black 39 and Black 26 to steering column for the MUX Switch . 
+The Emu Black MUX swith will allow to use 3 external Switches to single Analog input (Analog 1 in my case)
+CC will need just 2 Switches (Set/Cancel and Resume Input switches) so one will left for something else.
+
+The current OEM cruise control Switch has 3 posions and 1 Set/Cancel switch so a modification is needed.
+At the moment i'm building the resistor matrix inside the OEM switch so i can use it for my purposes (3d printing and PCB etching to the rescue :) )
+
 Updated the traces and added a new PCB version v0.4
 
 ![PCB-0.4](./img/pcb-v0.4.SVG)
