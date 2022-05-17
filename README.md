@@ -52,7 +52,7 @@ It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without an
 
 EMU Black Pinout
 
-<img src="./img/black-emu.jpg" width="300" />
+  <img src="./img/black-emu.jpg" width="300" />
 
 
 Mapped PINS
@@ -62,13 +62,13 @@ Mapped PINS
 
 Bosch LSU 4.9 wiring
 
-<img src="./img/emu-bosch-lsu-4.9.jpg" width="300" />
+  <img src="./img/emu-bosch-lsu-4.9.jpg" width="300" />
 
-<img src="./img/emu-bosch-lsu-4.9-wiring.jpg" width="300" />
+  <img src="./img/emu-bosch-lsu-4.9-wiring.jpg" width="300" />
 
 All4 Swap 
 
-<img src="./img/all4swap.jpg" width="300" />
+  <img src="./img/all4swap.jpg" width="300" />
 
 # Basemap
 
@@ -91,7 +91,7 @@ That's why i put alot of effort to do this design
 
 Current prototype :
 
-<img src="./img/v01.jpg" width="300" />
+  <img src="./img/v01.jpg" width="300" />
 
 
 Gerber Files : [1G/1J/2J/Miata Header Gerber Files](./PCB/JZ-header%20-%20CADCAM.ZIP)
@@ -167,14 +167,14 @@ Gerber Files: [IS200 Manual Gerber files](./PCB/IS200%20-%20CADCAM.ZIP)
 ## Coil Dwell Time
 Coil Dwell time found on the internet
 
-<img src="./img/coil-dwell.png" width="300" />
+  <img src="./img/coil-dwell.png" width="300" />
 
 ## ECU Header
 If you want to build your own PCB in proteus here is the Library.
 
 ECU Header for Proteus 8: [ECUHeader](./lib/8-5353015-1.zip)
 
-<img src="./img/ecu-header.jpg" width="300" />
+  <img src="./img/ecu-header.jpg" width="300" />
 
 
 # TODO
