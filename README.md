@@ -13,8 +13,28 @@ It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without an
 4. [EMU Black Basemap](#Basemap)
 5. [PCB Gerber files](#PCBs)
 6. [TODO List](#TODO)
-6. [Contacts](#Contacts)
+6. [Dyno Graph](#Dyno)
+7. [Contacts](#Contacts)
 
+
+# Change log 10.6.2022:
+
+1. Created Performance MAP.
+2. Assigned Aux 1 as Boost solenoid Output
+3. Fixes 
+ - Gear ration
+ - Fixed knock sensor Sense table and configured knock control
+ - Knock Sensor values (stock knock sensors)
+ - Fixed VVTI pid control
+ - VVTI table
+ - ACIS control
+ - VE Table
+ - lambda table
+ - timing advance table
+4. We found out that the car run rock solid at 0.9 bar of boost with 1zz injectors and stock fuel pump
+5. Need different turbocharger because of backpressure
+6. Added dyno graph 
+7. Added new basemap file called performance map
 
 # Change log 17.05.2022:
 
@@ -69,6 +89,15 @@ Bosch LSU 4.9 wiring
 All4 Swap 
 
   <img src="./img/all4swap.jpg" width="300" />
+
+# Performance MAP
+
+Use this MAP as basemap . Alot of fixes were made to the basemap as Knock Sensing, VVTi etc.
+
+[Peformance MAP ver 0.2](./lib/IS200%20-%20Performance%20map%20-0.1.emub)
+
+ 1. Not fixed : 
+ - Idle control 
 
 # Basemap
 
@@ -190,14 +219,14 @@ ECU Header for Proteus 8: [ECUHeader](./lib/8-5353015-1.zip)
 - [x] Setup Injectors
 - [x] Setup Knock Sensors
 - [x] Setup Dwell time on coils
-- [ ] Need to set Trigger Angle (car missing at the moment)
-- [ ] Dyno Test
-- [ ] Set AFR Table (need time)
-- [ ] Set VVTI Table (need dyno)
-- [ ] VE Tables (need dyno)
-- [ ] IDLE Control (need time)
+- [x] Need to set Trigger Angle (car missing at the moment)
+- [x] Dyno Test
+- [x] Set AFR Table 
+- [x] Set VVTI Table
+- [x] VE Tables 
+- [ ] IDLE Control (work in progress)
 - [ ] Add TRC Input from the ABS sensors and configure the Traction Control in the EMU Black (need aditional logic).I might end using builtin TRC Control.
-- [ ] Move boost solenoid into the EMU Black (this will be my last step)
+- [x] Move boost solenoid into the EMU Black 
 - [ ] CLT not shown on Dash (don't think i needed)
 - [ ] Oil Pressure light missing on dash (maybe i will use EMU Dash with bluetooth.Otherwise ...All4Swap)
 - [ ] Check Engine Light not connected. (maybe i will use the EMU Dash for this)
@@ -213,6 +242,16 @@ ECU Header for Proteus 8: [ECUHeader](./lib/8-5353015-1.zip)
 
 
 You can start the car with this configuration.At this moment a fine tune is needed. Stay...tuned :) 
+
+# Dyno 
+
+### 10.6.2022 
+
+- **208** Wheel HP at 5300 RPM/ **310NM**
+
+Boost **drop** due to small turbocharger and alot of backpressure
+
+  <img src="./img/Performance MAP v0.1.jpg" width="300" />
 
 
 # Contacts
