@@ -17,6 +17,16 @@ It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without an
 7. [Contacts](#Contacts)
 
 
+# Change log 23.6.2022:
+1. Added board version 0.5 with AC Pressure switch added to black connector
+
+    <img src="./img/pcb-v0.5-AC-PressureSW.png" width="200" />
+
+2. Added pictures of the assebled unit
+3. Soldering and crimping the wires took me roughly a few hours. 
+   The connections are not so great on the Black connector but i've got everyting connected. Maybe in the future i might do another PCB with better traces but at this moment it is pointless. Let me know if anything can be improved.
+
+
 # Change log 10.6.2022:
 
 1. Created Performance MAP.
@@ -125,6 +135,34 @@ Current prototype :
 
 Gerber Files : [1G/1J/2J/Miata Header Gerber Files](./PCB/JZ-header%20-%20CADCAM.ZIP)
 
+## Version 0.5
+
+During my install i encountered a problem with All4Swap device. 
+It turns out that it doesn't work with my IS200 2000.5 version of the AC Unit. 
+I decided to use the EMU Black control for the AC Unit until i find a better solution. Proposed resolution was to change the AC Unit with a previous version but it can't be done because the wiring is different.
+
+That's why i'm adding a new bord version that is used to connect Pressure Swith to the board. If you already have a board that is v0.4 and want to use AC Pressure switch as input then just cut the trace to B6 and move it to B4
+
+Removed Brake Swith (B6) and connected AC Pressure Switch to Black Connector 36
+
+![PCB-0.4](./img/pcb-v0.5.SVG)
+
+A few picture before all holes were drilled and the unit was installed into the "original" box.
+Need to install the top cover with spacers.
+
+Decided to install EMU Black CAN to Bluetooth module so i can connecto to the ECU with android app and check paramters. Keep in mind that the powersupply to the Bluetooth module is not expanded on the board so just splice 12v and GND to all4swap box power supply traces(wires).
+
+I'm still working on the Cruise controll connection but the power pins were connected aswell so hopefully in a few days/months i will be able to do it.
+
+  <img src="./img/v02-top.jpg" width="300" />
+
+  <img src="./img/v02-BoostOut.jpg" width="300" />
+
+
+Gerber Files: [IS200 Manual Gerber files](./PCB/JZ-header-v0.5%20-%20CADCAM.ZIP)
+
+
+
 ## Version 0.4
 
 I had a few days to decide how to implement Cruise Control and i came up with an idea to use the stock Cruise Control switch on the IS200 steering wheel. Need to figure out how to connect Black 39 and Black 26 to steering column for the MUX Switch . 
@@ -150,12 +188,7 @@ Gerber Files: [IS200 Manual Gerber files](./PCB/JZ-header-v0.4%20-%20CADCAM.ZIP)
 
 
 
-## Version 0.3
-
-The later version was optimized so that is smaller and can fit in the original OEM ECU box with EMU Black inside.
-
-![PCB-0.3](./img/pcb-v0.3.SVG)
-
+## Assembly
 
 You will need: 
 
