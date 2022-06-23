@@ -156,7 +156,7 @@ I'm still working on the Cruise controll connection but the power pins were conn
 
   <img src="./img/v02-top.jpg" width="300" />
 
-  <img src="./img/v02-BoostOut.jpg" width="300" />
+  <img src="./img/v02-boostOut.jpg" width="300" />
 
 
 Gerber Files: [IS200 Manual Gerber files](./PCB/JZ-header-v0.5%20-%20CADCAM.ZIP)
