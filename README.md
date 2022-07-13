@@ -16,6 +16,19 @@ It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without an
 6. [Dyno Graph](#Dyno)
 7. [Contacts](#Contacts)
 
+# Change log 13.7.2022:
+1. Added optimized Basemap Table with the following fixes
+ - Configured Check Engine Light as output so it will work if something goes wrong
+ - Added Bluetooth CAN Module 
+ - Optimized IDLE table
+ - Added AC signal to Analog 5 as input to tell the ECU that the AC Clutch is engaged. Analog 5 is connected directly to the All4Swap Relay output. (spliced to ACMG relay)
+ - Enabled EGO correction with some fixes. Might corret kP and kI later
+ - Optimized low range VE and few other ranges in the VE table
+ - Optimizing the Ignition table
+ - Improved cranking but still work in progress
+2. Updated the Pinouts to address the CEL and AC input. 
+3. Fixed the AC clutch engage 
+ - There are differences in All4Swap box devices. Had to re-program mine based on my model so it can work properly with the AC unit. If your AC clutch engages and disengages constantly contact All4Swap to fix the problem. This took me a week or two to fix it.
 
 # Change log 23.6.2022:
 1. Added board version 0.5 with AC Pressure switch added to black connector
@@ -100,11 +113,15 @@ All4 Swap
 
   <img src="./img/all4swap.jpg" width="300" />
 
+# Performance MAP ver 0.6
+[Peformance MAP ver 0.6](./lib/is200%20EMU_Black_Turbo-0.6-ACcontroll-added.emub)
+
+Alot of fixes into this MAP table in terms of optimized idle , EGO , AC and so on.
 # Performance MAP
 
 Use this MAP as basemap . Alot of fixes were made to the basemap as Knock Sensing, VVTi etc.
 
-[Peformance MAP ver 0.2](./lib/IS200%20-%20Performance%20map%20-0.1.emub)
+[Peformance MAP ver 0.1](./lib/IS200%20-%20Performance%20map%20-0.1.emub)
 
  1. Not fixed : 
  - Idle control 
@@ -257,13 +274,13 @@ ECU Header for Proteus 8: [ECUHeader](./lib/8-5353015-1.zip)
 - [x] Set AFR Table 
 - [x] Set VVTI Table
 - [x] VE Tables 
-- [ ] IDLE Control (work in progress)
+- [x] IDLE Control (work in progress)
 - [ ] Add TRC Input from the ABS sensors and configure the Traction Control in the EMU Black (need aditional logic).I might end using builtin TRC Control.
 - [x] Move boost solenoid into the EMU Black 
 - [ ] CLT not shown on Dash (don't think i needed)
 - [ ] Oil Pressure light missing on dash (maybe i will use EMU Dash with bluetooth.Otherwise ...All4Swap)
-- [ ] Check Engine Light not connected. (maybe i will use the EMU Dash for this)
-- [ ] Add Blutooth device (waiting for car headunit)
+- [x] Check Engine Light not connected. (maybe i will use the EMU Dash for this)
+- [x] Add Blutooth device (waiting for car headunit)
 - [ ] 3D Printed parts to attach the PCB into the original OEM ECU Box. Nedd final PCB
 
 
