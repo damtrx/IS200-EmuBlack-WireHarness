@@ -29,7 +29,7 @@ It allows Ecumaster EMU Black ECU to be swapped into original OEM ECU without an
 2. Updated the Pinouts to address the CEL and AC input. 
 3. Fixed the AC clutch engage 
  - There are differences in All4Swap box devices. Had to re-program mine based on my model so it can work properly with the AC unit. If your AC clutch engages and disengages constantly contact All4Swap to fix the problem. This took me a week or two to fix it.
-
+4. Updated the Secondary trigger from falling to raising. It turned out that i had a drift in the syncronization and the resolution was pretty simple with the trigger. If you are using previous MAP versions then update this immediately .
 # Change log 23.6.2022:
 1. Added board version 0.5 with AC Pressure switch added to black connector
 
@@ -117,6 +117,13 @@ All4 Swap
 [Peformance MAP ver 0.6](./lib/is200%20EMU_Black_Turbo-0.6-ACcontroll-added.emub)
 
 Alot of fixes into this MAP table in terms of optimized idle , EGO , AC and so on.
+1. Fixed CAM syncronization
+2. Needs optimization:
+ - Idle
+ - EGO
+ - Acceleration/Deceleration enrichment (transient conditions)
+ - Ignition table or Knock table because the ECU register knocks
+3. Boost closed loop strategy not started
 # Performance MAP
 
 Use this MAP as basemap . Alot of fixes were made to the basemap as Knock Sensing, VVTi etc.
